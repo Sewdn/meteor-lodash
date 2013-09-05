@@ -7,5 +7,6 @@ Npm.depends({'lodash': '1.3.1'});
 Package.on_use(function (api) {
   api.use('meteor', {unordered: true});
   api.export('_');
-  api.add_files(["lib/lodash.js"], ["client", "server"]);
+  api.add_files(["lib/lodash.js"], "server");
+  api.add_files(["lib/lodash_cp.js"], "client");
 });
